@@ -1,4 +1,4 @@
-class cola {
+class Cola {
     constructor() {
         this.posiciones = [];
     }
@@ -22,26 +22,23 @@ class cola {
         return this.posiciones.length;
     }
 }
-function invertirCola(cola){
-    const colaInvertida = new cola();
 
-    while (!cola.vacio()) {
-        colaInvertida.enqueue(cola.dequeue());
+function invertirCola(cola) {
+    const colaInvertida = new Cola();
+
+    for (let i = cola.posiciones.length - 1; i >= 0; i--) {
+        colaInvertida.enqueue(cola.posiciones[i]);
     }
 
     return colaInvertida;
 }
 
+const cola = new Cola();
+cola.enqueue(20);
+cola.enqueue(30);
+cola.enqueue(40);
 
+const colaInvertida = invertirCola(cola);
 
-// Ejemplo 
-const Nuevacola = new cola();
-Nuevacola.enqueue(20);
-Nuevacola.enqueue(30);
-Nuevacola.enqueue(40);
-
-const colaInvertida = invertirCola(Nuevacola);
-console.log("Nueva Cola:", Nuevacola.posiciones); 
-console.log("Cola invertida:", colaInvertida.posiciones); 
-
-
+console.log(cola.posiciones);
+console.log(colaInvertida.posiciones);
