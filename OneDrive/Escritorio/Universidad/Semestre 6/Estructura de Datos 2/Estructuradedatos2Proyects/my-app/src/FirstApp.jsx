@@ -1,4 +1,4 @@
-//[Challenges 1]
+
     const FirstApp = () => {
     return (
         <>
