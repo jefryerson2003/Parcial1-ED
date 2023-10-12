@@ -1,0 +1,56 @@
+PS C:\Users\Sneyd> cd escritorio
+cd : No se encuentra la ruta de acceso 'C:\Users\Sneyd\escritorio' porque no existe.
+En línea: 1 Carácter: 1
++ cd escritorio
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Sneyd\escritorio:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\Sneyd> cd OneDrive
+PS C:\Users\Sneyd\OneDrive> cd Escritorio
+PS C:\Users\Sneyd\OneDrive\Escritorio> cd Estructura de datos 2 Proyects
+Set-Location : No se encuentra ningún parámetro de posición que acepte el argumento 'de'.
+En línea: 1 Carácter: 1
++ cd Estructura de datos 2 Proyects
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Sneyd\OneDrive\Escritorio> cd Estructuradedatos2Proyects
+PS C:\Users\Sneyd\OneDrive\Escritorio\Estructuradedatos2Proyects> npm create vite@latest
+Need to install the following packages:
+  create-vite@4.4.1
+Ok to proceed? (y) y
+√ Project name: ...  my-app
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+
+Scaffolding project in C:\Users\Sneyd\OneDrive\Escritorio\Estructuradedatos2Proyects\my-app...
+
+Done. Now run:
+
+  cd my-app
+  npm install
+  npm run dev
+
+PS C:\Users\Sneyd\OneDrive\Escritorio\Estructuradedatos2Proyects> cd my-app
+PS C:\Users\Sneyd\OneDrive\Escritorio\Estructuradedatos2Proyects\my-app> npm install
+
+added 262 packages, and audited 263 packages in 27s
+
+96 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\Sneyd\OneDrive\Escritorio\Estructuradedatos2Proyects\my-app> npm run dev
+
+> my-app@0.0.0 dev
+> vite
+
+
+  VITE v4.4.9  ready in 1230 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h to show help
+
